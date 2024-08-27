@@ -4,6 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Meme Generator</title>
+    <style>
+        /* Style to center content */
+        body {
+            text-align: center; /* Center text and images */
+            margin: 0; /* Remove default margin */
+            font-family: Arial, sans-serif; /* Set font */
+        }
+
+        /* Style for the image */
+        #memeImage {
+            max-width: 100%; /* Make image responsive */
+            height: auto; /* Maintain aspect ratio */
+        }
+
+        /* Style for the container */
+        .container {
+            padding: 20px; /* Add padding around content */
+        }
+    </style>
     <script>
         // List of meme URLs with direct image links
         const memes = [
@@ -17,7 +36,6 @@
             'https://github.com/iShashankV/memeproj/blob/main/munna-bhai-mbbs-sanjay-dutt.gif?raw=true',
             'https://github.com/iShashankV/memeproj/blob/main/nirlazz-tu-fir-aa-gaya-768x512.jpg?raw=true',
             'https://github.com/iShashankV/memeproj/blob/main/ruko-zara-sabar-karo.jpg?raw=true',
-            
             // Add more meme links here if needed
         ];
 
@@ -36,7 +54,9 @@
     </script>
 </head>
 <body>
-    <h1>Pariotsh(Sir) ki Live Location</h1>
-    <img id="memeImage" src="" alt="Random Meme" style="width: 100%; max-width: 600px;">
+    <div class="container">
+        <h1>Paritosh(Sir) ki Live Location</h1>
+        <img id="memeImage" src="" alt="Random Meme">
+    </div>
 </body>
 </html>
