@@ -16,11 +16,26 @@
         #memeImage {
             max-width: 100%; /* Make image responsive */
             height: auto; /* Maintain aspect ratio */
+            display: block; /* Ensure image centers in its container */
+            margin: 0 auto; /* Center the image horizontally */
         }
 
         /* Style for the container */
         .container {
             padding: 20px; /* Add padding around content */
+            box-sizing: border-box; /* Ensure padding is part of the width calculation */
+        }
+
+        /* Adjust layout for smaller screens */
+        @media only screen and (max-width: 600px) {
+            .container {
+                padding: 10px; /* Reduce padding for smaller screens */
+            }
+
+            #memeImage {
+                width: 90%; /* Make the image take up 90% of the width on smaller screens */
+                max-width: 90%; /* Cap the max-width for mobile */
+            }
         }
     </style>
     <script>
